@@ -7,8 +7,7 @@
     box-sizing:border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif; /**Precisa Alterar para a fonte do projeto**/
-
+    font-family: 'Inter', sans-serif;
 }
 
 a{
@@ -17,6 +16,7 @@ a{
 
 ul,ol{
     list-style: none;
+    padding-top: 2%;
 }
 
 .logo img{
@@ -50,8 +50,13 @@ nav .nav-link img{
 }
 .nav-link p{
     color: white;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 1.2em;    
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
 }
 
 /**FIM Menu de navegação**/
