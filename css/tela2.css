@@ -7,8 +7,7 @@
     box-sizing:border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif; /**Precisa Alterar para a fonte do projeto**/
-
+    font-family: 'Inter', sans-serif;
 }
 
 a{
@@ -17,6 +16,7 @@ a{
 
 ul,ol{
     list-style: none;
+    padding-top: 2%;
 }
 
 .logo img{
@@ -50,13 +50,140 @@ nav .nav-link img{
 }
 .nav-link p{
     color: white;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 1.2em;    
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
 }
 
 /**FIM Menu de navegação**/
 
 /**Fim Nav**/
+
+
+#conteudoMonitor{
+    margin-top: 5%;
+    width: 100%;
+}
+
+.floatDireita{
+    float: right;
+    margin-top: 5%;
+
+}
+
+#inputBuscaFavoritos{
+    width: 100%;
+    display: inline-block;
+}
+
+#inputBuscaFavoritos input{
+    width: 40%;
+}
+
+.floatDireita h2,.floatEsquerda h2{
+    font-weight: bold;
+    color: rgb(107, 49, 255);
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.floatEsquerda{
+    float: left;
+    margin-top: 10%;
+}
+
+.floatEsquerda p{
+    float: left;
+    margin-right: 1%;
+    font-weight: 600;
+
+
+}
+
+.linhaFavoritos{
+    display: inline-flex;
+    height: 10%;
+    width: 100%;
+}
+
+div h3{
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#caixaFavoritos{
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 20em;
+    width: 20em;
+    box-shadow: 1px 1px 1px 1px rgb(146, 146, 146);
+    padding: 5%;  
+}
+
+#iconeSite{
+    width: 90%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.radioVerde{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    background-clip: content-box;
+    border: 5px solid #93e026;
+    background-color: #93e026;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: #93e026;
+}
+
+#checkFavoritos{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div p{
+    color:rgb(107, 49, 255);
+}
+
+#divBotaoVer{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+#botaoVer, #buscarFavoritos{
+    background-color: #50f;
+    border: none;
+    padding: 3px 20px;
+    color: #fafafafa;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(104, 104, 104);
+}
+
 
 /**
 Apoio
@@ -102,7 +229,3 @@ CSS com as cores da idwall:
 
 
 
-
-
-
-**/
