@@ -37,61 +37,82 @@
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_atributos.png" alt="Atributos">
+                            <a href="atributos.html">
                                 <p>Atributos</p>
+                            </a> 
                             </div>
+                           
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_documentos.png" alt="Documentos">
-                                <p>Documentos</p>
+                                <a href="documentos.html">
+                                    <p>Documentos</p>
+                                </a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_fontes.png" alt="Fontes">
-                                <p>Fontes</p>
+                                <a href="Fontes.html">
+                                    <p>Fontes</p>
+                                </a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_matrizes.png" alt="Matrizes">
-                                <p>Matrizes</p>
+                                <a href="Matrizes.html">
+                                    <p>Matrizes</p>
+                                </a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_monitor.png" alt="Monitor">
-                                <p>Monitor</p>
+                                <a href="Monitor.html">
+                                    <p>Monitor</p>
+                                </a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icone_organização.png" alt="Organização">
-                                <p>Organização</p>
+                                <a href="Organização.html">
+                                    <p>Organização</p>
+                                </a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_protocolo.png" alt="Protocolos">
-                                <p>Protocolos</p>
+                                <a href="Protocolos.html">
+                                    <p>Protocolos</p>
+                                </a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_regras.png" alt="Regras">
-                                <p>Regras</p>
+                                <a href="Regras.html">
+                                    <p>Regras</p>
+                                </a>
                             </div>
                         </li>
                         
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_user.png" alt="Usuários">
-                                <p>Usuários</p>
+                                <a href="index.html">
+                                    <p>Usuários</p>
+                                </a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-link"><img src="icon/icon_sair.png" alt="Sair">
-                                <p>Sair</p>
+                                <a href="sair.html">
+                                    <p>Sair</p>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -114,39 +135,63 @@
             
             <div class="flex-item flex-input">Email: <input type="text" id="email"></div>
             
-            <div class="flex-item flex-input">#id: <input type="number" name="id" id="id"></div>
+            <div class="flex-item flex-input">#id: <input type="number" name="id_pesquisa" id="id"></div>
             
             <div class="flex-item flex-input"><input type="checkbox" name="" id="checkbox"> Mostrar Desativados</div>
             
-            <div class="flex-item flex-input flex-botao"><input type="submit" id="enviar" value="Pesquisar"></div>
+            <div class="flex-item flex-input flex-botao"><input type="submit" id="btn_pesquisar" value="Pesquisar"></div>
             
+            
+
+
            </form>
             <!--Fim Formulário-->
+            <!--SAÍDA DAS INFORMAÇÕES ID DA PESQUISA-->
             <section class="flex-container flex-id">
-                <h1 class="flex-item">Resultado da pesquisa</h1>
+                <h1 class="flex-item">Resultado da pesquisa</h1> 
                 <div class="flex-item flex-item-id">
-
-                    <img src="icon/icon_user.png" alt="" width="60px" height="60px">
-                    <span class="flex-item">#152</span>
-                    <span class="flex-item">Diogo Jose da Silva</span>
-                    <div class="flex-item">Protocolo: <input type="number" placeholder="1586655" disabled></div>
-                    <div class="flex-item">Email: <input type="mail" placeholder="user@email.com" disabled></div>
-                    <div class="flex-item">Usuários: <input type="number" placeholder="5856" disabled></div>
+                    
+                    <figure class="flex-item">
+                        <div class="flex-item flex-id_box"># <sppan class="flex-item" id="saida_id">856</sppan></div>
+                        <img src="icon/icon_user.png" alt="" width="100px" height="110px">
+                        <div class="flex-item"><span class="flex-item" id="saida_nome">Diogo Jose da Silva</span></div>
+                    </figure>
+                    <div class="flex-item status_ferramentas">
+                        <label for="status">Status</label>
+                        <select name="Ferramenta" src="icon/check-icone-1-scaled.png" id="status_ferramentas">
+                            <option value="Ferramenta_01" class="bg-danger">Ferramenta_01 </option>
+                            <option value="Ferramenta_02" class="bg-success">Ferramenta_02</option>
+                            <option value="Ferramenta_03" class="bg-success">Ferramenta_03</option>
+                            <option value="Ferramenta_04" class="bg-danger">Ferramenta_04</option>
+                        </select>
+                        
+                    </div>
+                    <div class="flex-item margem_top_dados">
+                        <div class="flex-item flex_id_dados">Protocolo: <span id="saida_protocolo">856324</span></div>
+                        <div class="flex-item flex_id_dados">Email: <span id="saida_email">user@email.com</span></div>
+                        <div class="flex-item flex_id_dados">Usuários: <span id="saida_usuarios">5856</span></div>
+                    </div>
+                    <div class="logar_botao"><input type="button" value="Logar" class="btn_logar"></div>
             </section>
+            <div class="flex-container bt_flex">
+                <div class="flex-item adicionar_botao"><input type="button" value="Adicionar" class="btn_adicionar" id="adicionar-btn-id"></div>
+                <div class="flex-item excluir_botao"><input type="button" value="Excluir" class="btn_excluir" id="excluir-btn-id"></div>
+            </div>
+            
         </section>
 
-        <!--Card de informações-->
-        
-        <!--Fim Card de informações-->
+        <!--FIM SAÍDA DAS INFORMAÇÕES ID DA PESQUISA-->
     </main>
 <!--FIM main-->
 
     <aside class="flex-container">
-        <h1 class="flex-item">Últimas Buscas</h1>
+        <section class="flex-container">
+
+            <h1 class="flex-item">Últimas Buscas</h1>
  
-            <table class="table table-bordered border-dark ">
-                <thead class="flex-item">
-                    <tr>
+            <table class="table table-bordered border-light flex-item">
+                <thead >
+                    <tr> 
                         <th scope="col">Usuário</th>
                         <th scope="col">Protocolo</th>
                         <th scope="col">Email</th>
@@ -155,13 +200,13 @@
                     </tr>
                 </thead>
             
-                <tbody class="flex-item">
+                <tbody class="border-light">
                     <tr>
                         <th scope="row">5151</th>
                         <td>1</td>
                         <td>user@gmail.com</td>
                         <td>SIM</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                     
                     </tr>
                     <tr> 
@@ -169,7 +214,7 @@
                         <td>25</td>
                         <td>user@gmail.com</td>
                         <td>SIM</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
              
                     </tr>
                     <tr>
@@ -177,7 +222,7 @@
                         <td>3</td>
                         <td>user@gmail.com</td>
                         <td>NÃO</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                       
                     </tr>
                     <tr>
@@ -185,7 +230,7 @@
                         <td>1</td>
                         <td>user@gmail.com</td>
                         <td>SIM</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                     
                     </tr>
                     <tr>
@@ -193,7 +238,7 @@
                         <td>25</td>
                         <td>user@gmail.com</td>
                         <td>SIM</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                     
                     </tr>
                     <tr>
@@ -201,7 +246,7 @@
                         <td>3</td>
                         <td>user@gmail.com</td>
                         <td>NÃO</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                     
                     </tr>
                     <tr>
@@ -209,7 +254,7 @@
                         <td>1</td>
                         <td>user@gmail.com</td>
                         <td>SIM</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                     
                     </tr>
                     <tr>
@@ -217,7 +262,7 @@
                         <td>25</td>
                         <td>user@gmail.com</td>
                         <td>SIM</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                     
                     </tr>
                     <tr>
@@ -225,7 +270,7 @@
                         <td>3</td>
                         <td>user@gmail.com</td>
                         <td>NÃO</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
                     
                     </tr>
                     <tr>
@@ -233,7 +278,7 @@
                         <td>1</td>
                         <td>user@gmail.com</td>
                         <td>SIM</td>
-                        <td><input type="button" id="logar" value="Logar"></td>
+                        <td><input type="button" id="logar" value="Logar" class="btn_logar"></td>
 
                     </tr>
 
@@ -242,8 +287,7 @@
                 </tbody>
              
             </table>
-        </div>
-        </container>
+        </section>
     </aside>
 
 
